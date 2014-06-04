@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         livereload: true
       },
       uglify: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/js/{,*/}*.js'],
         tasks: ['uglify']
       },
       compass: {

@@ -2,39 +2,40 @@
 body, html {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
+  background: #fcfcfc;
 }
 
-/* line 6, main.scss */
+/* line 7, main.scss */
 h1 {
   height: 1px;
   width: 1px;
   overflow: hidden;
 }
 
-/* line 12, main.scss */
+/* line 13, main.scss */
 form {
   width: 320px;
   margin: 0 auto;
 }
 
 /* input container */
-/* line 18, main.scss */
+/* line 19, main.scss */
 form > div {
   margin-bottom: 30px;
 }
 
-/* line 23, main.scss */
+/* line 24, main.scss */
 #clarity-view {
   height: 162px;
 }
 
-/* line 27, main.scss */
+/* line 28, main.scss */
 #color-view,
 #carat-view {
   height: 111px;
 }
 
-/* line 31, main.scss */
+/* line 32, main.scss */
 #carat-view input {
   width: 180px;
   outline: none;
@@ -43,18 +44,26 @@ form > div {
   text-align: center;
 }
 
-/* line 44, main.scss */
+/* line 41, main.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 51, main.scss */
 .carat-container,
 .color-container,
 .clarity-container {
   margin: 20px 0 0;
-  height: 80px;
+  height: 90px;
   position: relative;
   border-radius: 5px;
   border: 1px solid #eee;
+  background: white;
 }
 
-/* line 53, main.scss */
+/* line 61, main.scss */
 button {
   background: none;
   border: 0;
@@ -67,51 +76,51 @@ button {
   outline: none;
 }
 
-/* line 67, main.scss */
+/* line 75, main.scss */
 button:hover {
   color: #7ABCDE;
 }
 
-/* line 71, main.scss */
+/* line 79, main.scss */
 button:disabled {
   color: #C2EDFF;
 }
 
-/* line 75, main.scss */
+/* line 83, main.scss */
 .increment-button {
   float: right;
 }
 
-/* line 79, main.scss */
+/* line 87, main.scss */
 label {
   position: absolute;
   width: 120px;
   left: 40px;
   text-align: center;
   color: #b3e2ff;
-  top: 3px;
+  top: 8px;
 }
 
-/* line 88, main.scss */
+/* line 96, main.scss */
 .value {
   display: inline-block;
   width: 120px;
   text-align: center;
   font-size: 48px;
   color: #6CC0E5;
-  padding-top: 14px;
+  padding-top: 20px;
   float: left;
   margin-right: 10px;
 }
 
-/* line 101, main.scss */
+/* line 109, main.scss */
 .carat-container .value,
 .carat-container label {
   width: 238px;
   margin-right: 0;
 }
 
-/* line 110, main.scss */
+/* line 118, main.scss */
 #color-diagram,
 #clarity-diagram {
   width: 100px;
@@ -119,143 +128,141 @@ label {
   overflow: hidden;
 }
 
-/* line 116, main.scss */
+/* line 124, main.scss */
 #color-diagram {
   background-image: url("../img/color.png");
   height: 80px;
-  margin-left: -10px;
-  margin-right: 10px;
+  margin: 8px 10px 0 -10px;
 }
 
-/* line 126, main.scss */
+/* line 133, main.scss */
 #clarity-diagram {
   background-image: url("../img/clarity.png");
   height: 90px;
-  margin-top: -5px;
   margin-left: -10px;
   margin-right: 10px;
 }
 
-/* line 134, main.scss */
+/* line 140, main.scss */
 .color-diagram-D {
   background-position: 0px -5px;
 }
 
-/* line 135, main.scss */
+/* line 141, main.scss */
 .color-diagram-E {
   background-position: -100px -5px;
 }
 
-/* line 136, main.scss */
+/* line 142, main.scss */
 .color-diagram-F {
   background-position: -200px -5px;
 }
 
-/* line 137, main.scss */
+/* line 143, main.scss */
 .color-diagram-G {
   background-position: -300px -5px;
 }
 
-/* line 138, main.scss */
+/* line 144, main.scss */
 .color-diagram-H {
   background-position: -400px -5px;
 }
 
-/* line 139, main.scss */
+/* line 145, main.scss */
 .color-diagram-I {
   background-position: -500px -5px;
 }
 
-/* line 140, main.scss */
+/* line 146, main.scss */
 .color-diagram-J {
   background-position: -600px -5px;
 }
 
-/* line 141, main.scss */
+/* line 147, main.scss */
 .color-diagram-K {
   background-position: -700px -5px;
 }
 
-/* line 142, main.scss */
+/* line 148, main.scss */
 .color-diagram-L {
   background-position: -800px -5px;
 }
 
-/* line 143, main.scss */
+/* line 149, main.scss */
 .color-diagram-M {
   background-position: -900px -5px;
 }
 
-/* line 146, main.scss */
+/* line 152, main.scss */
 .clarity-diagram-VVS1 {
   background-position: -100px 0;
 }
 
-/* line 147, main.scss */
+/* line 153, main.scss */
 .clarity-diagram-VVS2 {
   background-position: -100px 0;
 }
 
-/* line 148, main.scss */
+/* line 154, main.scss */
 .clarity-diagram-VS1 {
   background-position: -200px 0;
 }
 
-/* line 149, main.scss */
+/* line 155, main.scss */
 .clarity-diagram-VS2 {
   background-position: -200px 0;
 }
 
-/* line 150, main.scss */
+/* line 156, main.scss */
 .clarity-diagram-SI1 {
   background-position: -300px 0;
 }
 
-/* line 151, main.scss */
+/* line 157, main.scss */
 .clarity-diagram-SI2 {
   background-position: -300px 0;
 }
 
-/* line 152, main.scss */
+/* line 158, main.scss */
 .clarity-diagram-SI3 {
   background-position: -400px 0;
 }
 
-/* line 153, main.scss */
+/* line 159, main.scss */
 .clarity-diagram-I1 {
   background-position: -400px 0;
 }
 
-/* line 154, main.scss */
+/* line 160, main.scss */
 .clarity-diagram-I2 {
   background-position: -500px 0;
 }
 
-/* line 155, main.scss */
+/* line 161, main.scss */
 .clarity-diagram-I3 {
   background-position: -500px 0;
 }
 
-/* line 161, main.scss */
+/* line 167, main.scss */
 .totalCost {
   margin-bottom: 14px;
 }
 
-/* line 165, main.scss */
+/* line 171, main.scss */
 .totalCost label {
   left: 10px;
   position: relative;
   float: left;
-  margin-top: 9px;
+  margin-top: 4px;
   margin-right: 20px;
 }
 
-/* line 173, main.scss */
+/* line 179, main.scss */
 .totalCost .value {
   padding-top: 0;
 }
 
-/* line 178, main.scss */
+/* line 184, main.scss */
 .oversizePremiums,
 .description {
   clear: both;
@@ -265,7 +272,7 @@ label {
   padding-right: 10px;
 }
 
-/* line 186, main.scss */
+/* line 192, main.scss */
 .oversizePremiums {
   font-size: 14px;
   color: #AAAAB7;

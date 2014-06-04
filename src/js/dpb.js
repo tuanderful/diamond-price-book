@@ -96,10 +96,6 @@ clarityView = new CharacteristicView({
 
 
 
-
-
-
-
 var CaratView = CharacteristicView.extend({
   increment: function(e) {
     var newValue = +(this.model.get('carat') + .01).toFixed(2);
@@ -114,6 +110,9 @@ var CaratView = CharacteristicView.extend({
   changeInput: function(){
     var newVal = this.$el.find('.value input').val();
     this.model.set('carat', +newVal);
+  },
+  foobar: function(){
+    console.log('keypress fired');
   },
   events: {
     'click .increment-button': 'increment',
