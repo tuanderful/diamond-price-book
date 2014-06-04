@@ -111,14 +111,14 @@ var CaratView = CharacteristicView.extend({
     e.preventDefault();
     this.model.set('carat', newValue);
   },
-  manualChange: function(){
+  changeInput: function(){
     var newVal = this.$el.find('.value input').val();
     this.model.set('carat', +newVal);
   },
   events: {
     'click .increment-button': 'increment',
     'click .decrement-button': 'decrement',
-    'change input': 'manualChange'
+    'change input': 'changeInput'
   },
   render: function() {
     this.$el.find('input').val(this.model.get('carat'));

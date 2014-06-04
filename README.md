@@ -1,6 +1,7 @@
 # README.md
 
 ## Start up Simple Server
-    python -m SimpleHTTPServer 9999
+    npm install
+    grunt server
 
-[http://localhost:9999](http://localhost:9999)
+[http://localhost:9000](http://localhost:9000)
